@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexis Valencia</title>
+<meta name="description" content="Portafolio de Alexis Valencia Bedoya, Web Developer en Medellín: WordPress, Shopify, front-end y servicios en AWS.">
+<meta property="og:title" content="Alexis Valencia">
+<meta property="og:description" content="Web Developer en Medellín: sitios WordPress y Shopify, y servicios en AWS.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#inicio">
+      <img src="img/logo.svg" alt="" width="34" height="34">
+      <span>Alexis Valencia</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav id="main-nav" aria-label="Secciones">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#stack">Stack</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <div class="hero">
+      <img class="hero-banner" src="img/banner.jpg" alt="" aria-hidden="true">
+      <div>
+        <p class="eyebrow">Web Developer · Medellín, Colombia</p>
+        <h1><span class="w">Sitios web rápidos.</span> <span class="c">Servicios seguros en AWS.</span></h1>
+        <p class="lead">Soy Alexis Valencia Bedoya. Llevo más de 2 años desarrollando sitios corporativos, tiendas y landing pages en WordPress y Shopify, con SEO técnico y Core Web Vitals. Ahora construyo backends propios y los despliego en EC2, RDS e IAM.</p>
+        <div class="actions">
+          <a class="btn primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn" href="https://github.com/Alexisv07" target="_blank" rel="noopener">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.7c3-.3 6.1-1.5 6.1-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6S17.5 1.2 15 3a13.2 13.2 0 0 0-7 0C5.5 1.2 4.3 1.5 4.3 1.5a4.8 4.8 0 0 0-.1 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.1 6.4 6.1 6.7A3.4 3.4 0 0 0 8 18v4"/></svg>
+            GitHub <span aria-hidden="true">↗</span>
+          </a>
+          <a class="btn" href="https://www.linkedin.com/in/alexis-valencia/" target="_blank" rel="noopener">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM2.5 9h3v12h-3zm6 0h2.9v1.6h.1A3.2 3.2 0 0 1 14.4 9c3.1 0 3.6 2 3.6 4.7V21h-3v-6.5c0-1.6 0-3.6-2.2-3.6s-2.5 1.7-2.5 3.5V21h-3z"/></svg>
+            LinkedIn <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="facts" aria-label="Datos rápidos">
+          <span>Disponible para trabajo remoto</span>
+          <span>UTC−5, sin cambio de horario</span>
+          <span>Desarrollo de Software, ITM</span>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="img/Alexis.webp" alt="Retrato de Alexis Valencia" width="380" height="380">
+        <span class="portrait-mark mark-code" aria-hidden="true">&lt;/&gt;</span>
+        <span class="portrait-mark mark-cloud" aria-hidden="true">☁</span>
+        <figcaption>Alexis Valencia Bedoya</figcaption>
+      </figure>
+    </div>
+
+    <section id="proyectos">
+      <div class="sec-head">
+        <h2>Proyectos</h2>
+        <p>Un servicio propio en la nube, un caso corporativo con integración de API y cinco sitios en producción.</p>
+      </div>
+
+      <article class="card">
+        <div class="card-top">
+          <span class="layer cloud">Capa nube</span>
+          <span class="meta">Marzo 2026 · 22 commits</span>
+        </div>
+        <h3>API de autenticación en AWS</h3>
+        <p class="desc">API REST con registro de usuarios y login que entrega un JWT. Corre en una instancia EC2, guarda los datos en MySQL dentro de una capa privada de RDS y usa un rol IAM con mínimos privilegios.</p>
+
+        <div class="flow" role="img" aria-label="Diagrama: el cliente llama a la API en EC2, que consulta MySQL en RDS dentro de una capa privada">
+          <div class="node">
+            <div class="k">Cliente</div>
+            <div class="n">Peticiones HTTP</div>
+            <div class="d">POST /register<br>POST /login</div>
+          </div>
+          <div class="arrow" aria-hidden="true"></div>
+          <div class="node">
+            <div class="k">Cómputo</div>
+            <div class="n">EC2</div>
+            <div class="d">Amazon Linux 2023 · Node.js 18 · Express · PM2 · Elastic IP</div>
+            <span class="tag">Rol IAM · mínimos privilegios</span>
+          </div>
+          <div class="arrow" aria-hidden="true"></div>
+          <div class="node private">
+            <div class="k">Base de datos</div>
+            <div class="n">RDS</div>
+            <div class="d">MySQL 8.0</div>
+            <span class="tag">Capa privada</span>
+          </div>
+        </div>
+
+        <div class="endpoints">
+          <div><b>POST</b><code>/register</code><span>Registro de usuario</span></div>
+          <div><b>POST</b><code>/login</code><span>Login y emisión del JWT</span></div>
+        </div>
+
+        <ul class="chips" aria-label="Tecnologías">
+          <li>AWS EC2</li><li>RDS</li><li>IAM</li><li>Node.js</li><li>Express</li><li>MySQL</li><li>bcryptjs</li><li>jsonwebtoken</li><li>Docker</li><li>PM2</li>
+        </ul>
+        <a class="link cloud" href="https://github.com/Alexisv07/app-auth-aws" target="_blank" rel="noopener">Ver código en GitHub ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <span class="layer web">Capa web</span>
+          <span class="meta">Realseguros AG · 2021 a 2023</span>
+        </div>
+        <h3>Sitio corporativo y cotizador de seguros</h3>
+        <p class="desc">Lideré el diseño y desarrollo completo del sitio de una aseguradora en WordPress y lo mantuve durante más de 2 años sin interrupciones del servicio.</p>
+        <div class="case">
+          <div>
+            <h4>Reto</h4>
+            <p>Los clientes esperaban respuesta para cotizar seguros vehiculares, y el sitio debía posicionarse en Google.</p>
+          </div>
+          <div>
+            <h4>Solución</h4>
+            <p>Integré una API REST externa para cotizar de forma automática. Escribí funcionalidades a medida en PHP, front-end y back-end, y apliqué SEO técnico y optimización de rendimiento.</p>
+          </div>
+          <div>
+            <h4>Resultado</h4>
+            <p>Menos tiempo de respuesta al cliente, mejor posicionamiento orgánico y un sitio estable con actualizaciones y soporte continuos.</p>
+          </div>
+        </div>
+        <ul class="chips" aria-label="Tecnologías">
+          <li>WordPress</li><li>PHP</li><li>API REST</li><li>SEO técnico</li><li>JavaScript</li>
+        </ul>
+      </article>
+
+      <div class="sub">
+        <h3>Sitios en producción</h3>
+        <p>Abren en una pestaña nueva.</p>
+      </div>
+      <div class="sites">
+        <article class="site">
+          <div class="bar"><span>oralstudio.com.co</span><span>Gulupa Digital · 2024</span></div>
+          <div class="body">
+            <img class="site-logo" src="img/Logo-Oralstudio.webp" alt="Logo de Oral Studio" width="96" height="96" loading="lazy">
+            <h3>Oral Studio</h3>
+            <p class="kind">Clínica odontológica en Medellín</p>
+            <p class="desc">Sitio corporativo bilingüe (español e inglés) con una página por servicio, blog, formulario de contacto y atención directa por WhatsApp. Estructura pensada para SEO técnico.</p>
+            <ul class="chips"><li>WordPress</li><li>Elementor Pro</li><li>SEO técnico</li><li>Multilenguaje</li></ul>
+            <a class="link" href="https://oralstudio.com.co/" target="_blank" rel="noopener">Visitar sitio ↗</a>
+          </div>
+        </article>
+        <article class="site">
+          <div class="bar"><span>inself.co</span><span>Gulupa Digital</span></div>
+          <div class="body">
+            <img class="site-logo" src="img/Logo-inself.webp" alt="Logo de Inself" width="96" height="96" loading="lazy">
+            <h3>Inself</h3>
+            <p class="kind">Servicios de psicología, presencial y virtual</p>
+            <p class="desc">Sitio de una sola página con navegación por secciones: servicios, equipo de psicólogos, testimonios, preguntas frecuentes, formulario y cotización por WhatsApp.</p>
+            <ul class="chips"><li>WordPress</li><li>Elementor Pro</li><li>Landing</li><li>WhatsApp</li></ul>
+            <a class="link" href="https://inself.co/" target="_blank" rel="noopener">Visitar sitio ↗</a>
+          </div>
+        </article>
+        <article class="site">
+          <div class="bar"><span>landing.nutrafitcolombia.com</span><span>Gulupa Digital</span></div>
+          <div class="body">
+            <img class="site-logo" src="img/Logo-nutrafit.webp" alt="Logo de Nutrafit" width="96" height="96" loading="lazy">
+            <h3>Nutrafit</h3>
+            <p class="kind">Suplementos deportivos</p>
+            <p class="desc">Landing de conversión para una tienda de creatina: ofertas, productos destacados con precios, preguntas frecuentes, medición corporal gratuita y asesoría por WhatsApp.</p>
+            <ul class="chips"><li>WordPress</li><li>Elementor Pro</li><li>Conversión</li><li>E-commerce</li></ul>
+            <a class="link" href="https://landing.nutrafitcolombia.com/" target="_blank" rel="noopener">Visitar sitio ↗</a>
+          </div>
+        </article>
+        <article class="site">
+          <div class="bar"><span>magicbabycol.com</span><span>Pipefy Group</span></div>
+          <div class="body">
+            <img class="site-logo" src="img/Logo-Magic-baby.webp" alt="Logo de Magic Baby" width="96" height="96" loading="lazy">
+            <h3>Magic Baby</h3>
+            <p class="kind">Tienda de productos para bebés</p>
+            <p class="desc">Tienda en Shopify con seis categorías, sección de más vendidos, reseñas de clientes y envíos a todo el país. Mejoras de experiencia de usuario y de carrito de compras.</p>
+            <ul class="chips"><li>Shopify</li><li>E-commerce</li><li>UX</li><li>Rendimiento</li></ul>
+            <a class="link" href="https://magicbabycol.com/" target="_blank" rel="noopener">Visitar sitio ↗</a>
+          </div>
+        </article>
+        <article class="site">
+          <div class="bar"><span>aromaworldus.com</span><span>Pipefy Group</span></div>
+          <div class="body">
+            <img class="site-logo" src="img/Logo-AromaWorld.webp" alt="Logo de Aroma World" width="96" height="96" loading="lazy">
+            <h3>Aroma World</h3>
+            <p class="kind">Difusores y fragancias de nivel hotelero</p>
+            <p class="desc">Tienda en Shopify en inglés y español para el mercado de Estados Unidos. Incluye suscripción con 20 % de ahorro y cuestionarios para elegir aroma y difusor.</p>
+            <ul class="chips"><li>Shopify</li><li>Bilingüe</li><li>Suscripciones</li><li>E-commerce</li></ul>
+            <a class="link" href="https://aromaworldus.com/" target="_blank" rel="noopener">Visitar sitio ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="sec-head">
+        <h2>Stack</h2>
+        <p>Lo que uso a diario, ordenado por capa.</p>
+      </div>
+      <div class="stack">
+        <div class="col">
+          <span class="layer web">Capa web</span>
+          <h3>Sitios y tiendas</h3>
+          <ul class="chips">
+            <li>WordPress</li><li>Elementor Pro</li><li>Shopify</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>PHP</li><li>SEO técnico</li><li>Core Web Vitals</li>
+          </ul>
+          <p>Diseños UX/UI llevados a interfaces responsivas, con foco en velocidad de carga y conversión.</p>
+        </div>
+        <div class="col">
+          <span class="layer cloud">Capa servidor</span>
+          <h3>APIs y datos</h3>
+          <ul class="chips">
+            <li>Node.js</li><li>Express</li><li>API REST</li><li>JWT</li><li>MySQL</li><li>PHP</li>
+          </ul>
+          <p>Integración de APIs externas y servicios propios con autenticación y contraseñas cifradas.</p>
+        </div>
+        <div class="col">
+          <span class="layer cloud">Capa nube</span>
+          <h3>Despliegue</h3>
+          <ul class="chips">
+            <li>AWS EC2</li><li>AWS RDS</li><li>AWS IAM</li><li>Docker</li><li>PM2</li><li>Git</li><li>GitHub</li>
+          </ul>
+          <p>Redes privadas para la base de datos, roles con mínimos privilegios y despliegues sobre Linux.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="trayectoria">
+      <div class="sec-head">
+        <h2>Trayectoria</h2>
+        <p>De WordPress corporativo a la nube, en orden cronológico inverso.</p>
+      </div>
+      <ol class="timeline">
+        <li>
+          <div class="when">Jul 2024 a Ago 2024</div>
+          <div>
+            <h3>WordPress Developer</h3>
+            <p class="where">Gulupa Digital · Medellín</p>
+            <ul>
+              <li>Sitios responsivos en WordPress con Elementor Pro, dentro de un equipo de desarrollo y marketing digital.</li>
+              <li>SEO técnico: estructura HTML, URLs canónicas y metadatos para mejorar la indexación.</li>
+              <li>Optimización de Core Web Vitals para reducir tiempos de carga en móvil.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Ago 2023 a Oct 2023</div>
+          <div>
+            <h3>Front-End Web Developer</h3>
+            <p class="where">Pipefy Group · Medellín</p>
+            <ul>
+              <li>Interfaces responsivas con HTML5, CSS3 y JavaScript.</li>
+              <li>Mejoras de UX y conversión en tiendas Shopify, con más interacción en los carritos.</li>
+              <li>Optimización de rendimiento con mejoras de hasta 20 % en métricas de velocidad.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Jun 2021 a Ago 2023</div>
+          <div>
+            <h3>WordPress Developer</h3>
+            <p class="where">Realseguros AG · Medellín</p>
+            <ul>
+              <li>Diseño y desarrollo completo del sitio corporativo durante más de 2 años.</li>
+              <li>Integración de una API REST externa para cotizar seguros vehiculares.</li>
+              <li>Funcionalidades a medida en PHP, SEO técnico y mantenimiento continuo.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+      <div class="study">
+        <b>Desarrollo de Software</b>
+        <span>Instituto Tecnológico Metropolitano (ITM), en curso</span>
+      </div>
+    </section>
+
+    <section id="sobre-mi">
+      <div class="sec-head">
+        <h2>Sobre mí</h2>
+      </div>
+      <div class="about">
+        <p>Empecé construyendo sitios para negocios reales y aprendí a medir lo que importa: cuánto tarda en cargar una página, si Google la entiende y si el visitante termina escribiendo por WhatsApp o comprando.</p>
+        <p>Hoy estudio Desarrollo de Software y llevo esa misma mentalidad al backend y a la nube. Mi objetivo es crecer hacia roles de cloud en AWS, sin perder el cuidado por el detalle visual que traigo del front-end.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <p class="eyebrow">Contacto</p>
+      <h2 style="margin-top:14px">¿Tienes un proyecto o una vacante? Escríbeme.</h2>
+      <div class="mail">
+        <code id="mail-text">alexisvalebedoya@gmail.com</code>
+        <button class="copy" id="copy-btn" type="button">Copiar correo</button>
+      </div>
+      <div class="elsewhere">
+        <a class="btn" href="https://www.linkedin.com/in/alexis-valencia/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/Alexisv07" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <footer>
+        <span>© 2026 Alexis Valencia Bedoya</span>
+        <span>Medellín, Colombia · UTC−5</span>
+      </footer>
+    </section>
+  </main>
+</div>
+
+<a class="whatsapp-float" href="https://wa.me/573177244671?text=Hola%20Alexis%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto." target="_blank" rel="noopener noreferrer" aria-label="Contactar a Alexis por WhatsApp al 317 724 4671">
+  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.3L3 20l1.2-5a8.4 8.4 0 1 1 16.3-3.4Z"/><path d="M8.8 8.2c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .5.4l.7 1.6c.1.3.1.4 0 .6l-.5.6c-.2.2-.2.3-.1.5.4.7 1 1.3 1.7 1.7.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.5-.5.5-1.2.7-1.9.6-.7-.1-1.7-.5-2.8-1.4-1.2-1-2-2.2-2.2-3.1-.3-.8-.1-1.6.2-2.3.2-.4.5-.6.8-.5Z"/></svg>
+  <span aria-hidden="true">Hablemos por WhatsApp</span>
+</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
